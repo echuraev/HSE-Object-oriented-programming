@@ -1,0 +1,9 @@
+.DS_Store
+practice/build
+practice/cmake-build-debug
+practice/cmake-build-Debug
+practice/cmake-build-release
+practice/cmake-build-Release
+practice/compile_commands.json
+practice/.vscode
+practice/.idea
