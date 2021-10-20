@@ -11,6 +11,7 @@ Matrix::Matrix()
 Matrix::Matrix(const Matrix& mat)
     : m_rows(mat.m_rows)
     , m_cols(mat.m_cols)
+    , m_channels(mat.m_channels)
     , m_data(mat.m_data)
 {}
 
