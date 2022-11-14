@@ -18,14 +18,14 @@ Matrix::Matrix(const Matrix& mat)
 Matrix::Matrix(size_t rows, size_t cols, size_t channels) 
     : m_rows(rows)
     , m_cols(cols)
-    , m_channels(std::max(channels, 1UL))
+    , m_channels(std::max(channels, static_cast<size_t>(1)))
     , m_data(rows * cols * m_channels)
 {}
 
 Matrix::Matrix(size_t rows, size_t cols, size_t channels, int initValue)
     : m_rows(rows)
     , m_cols(cols)
-    , m_channels(std::max(channels, 1UL))
+    , m_channels(std::max(channels, static_cast<size_t>(1)))
     , m_data(rows * cols * m_channels, initValue)
 {}
 
